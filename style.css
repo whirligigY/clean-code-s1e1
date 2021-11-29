@@ -24,7 +24,7 @@
   .block-image_size {
     text-align: center;
   }
-  
+
 }
 .block-tasks_centered {
   display: block;
@@ -39,16 +39,17 @@
 .block-tasks__wrapper {
   display: flex;
 }
+
 ul {
   margin: 0;
   padding: 0px;
 }
-li,
-h3 {
+h3,
+li {
   list-style: none;
 }
-input,
-button {
+button,
+input {
   outline: none;
 }
 .button {
@@ -64,8 +65,8 @@ button {
   color: #3a3a3a;
 }
 /* Heading */
-.block-tasks__title,
-.new-task__label {
+.new-task__label,
+.block-tasks__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -104,7 +105,6 @@ button {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
