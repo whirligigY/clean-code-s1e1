@@ -5,26 +5,30 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="body">
-    <div class="block-image block-image_size">
+    <section class="block-image block-image_size">
         <img class="block-image__img" src="./eisenhower-matrix.jpg"><a class="block-image__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="block-tasks block-tasks_centered">
-      <p class="block-tasks__new-task-block new-task" id="topSectionForAddingElementToList">
+    </section>
+    <section class="block-tasks block-tasks_centered">
+      <article class="block-tasks__new-task-block new-task">
         <label class="block-tasks__label new-task__label" for="new-task">Add Item</label>
         <div class="block-tasks__wrapper">
           <input class="block-tasks__input new-task__input task input-text" id="new-task" type="text"><button class="block-tasks__btn button">Add</button>
         </div>
-      </p>
-      <h3 class="block-tasks__title">Todo</h3>
-      <ul class="block-tasks__list incompleted-tasks">
-        <li class="block-tasks__item"><input class="block-tasks__item-checkbox input-checkbox" type="checkbox"><label class="block-tasks__label block-tasks__item-label task">Pay Bills</label><input class="block-tasks__item-text input-text task" type="text"><button class="button edit">Edit</button><button class="button delete"><img class="delete__img" src="./remove.svg"></button></li>
-        <li class="block-tasks__item block-tasks__item_edit-mode block-tasks__item_edit-mode"><input class="block-tasks__item-checkbox input-checkbox" type="checkbox"><label class="block-tasks__label block-tasks__item-label block-tasks__label_edit-mode task">Go Shopping</label><input class="block-tasks__item-text input-text block-tasks__input_edit-mode task" type="text" value="Go Shopping" ><button class="button edit">Save</button><button class="button delete"><img class="delete__img" src="./remove.svg"></button></li>
-      </ul>
-      <h3 class="block-tasks__title">Completed</h3>
-      <ul class="block-tasks__list completed-tasks" id="completed-tasks">
-        <li class="block-tasks__item"><input class="block-tasks__item-checkbox input-checkbox" type="checkbox" checked><label class="block-tasks__label block-tasks__item-label completed-tasks__label task">See the Doctor</label><input class="block-tasks__item-text input-text task" type="text"><button class="button edit">Edit</button><button class="button delete"><img class="delete__img" src="./remove.svg"></button></li>
-      </ul>
-    </div>
+      </article>
+      <article>
+        <h3 class="block-tasks__title">Todo</h3>
+        <ul class="block-tasks__list incompleted-tasks">
+          <li class="block-tasks__item"><input class="block-tasks__item-checkbox input-checkbox" type="checkbox"><label class="block-tasks__label block-tasks__item-label task">Pay Bills</label><input class="block-tasks__item-text input-text task" type="text"><button class="button edit">Edit</button><button class="button delete"><img class="delete__img" src="./remove.svg"></button></li>
+          <li class="block-tasks__item block-tasks__item_edit-mode block-tasks__item_edit-mode"><input class="block-tasks__item-checkbox input-checkbox" type="checkbox"><label class="block-tasks__label block-tasks__item-label block-tasks__label_edit-mode task">Go Shopping</label><input class="block-tasks__item-text input-text block-tasks__input_edit-mode task" type="text" value="Go Shopping" ><button class="button edit">Save</button><button class="button delete"><img class="delete__img" src="./remove.svg"></button></li>
+        </ul>
+      </article>
+      <article>
+        <h3 class="block-tasks__title">Completed</h3>
+        <ul class="block-tasks__list completed-tasks" id="completed-tasks">
+          <li class="block-tasks__item"><input class="block-tasks__item-checkbox input-checkbox" type="checkbox" checked><label class="block-tasks__label block-tasks__item-label completed-tasks__label task">See the Doctor</label><input class="block-tasks__item-text input-text task" type="text"><button class="button edit">Edit</button><button class="button delete"><img class="delete__img" src="./remove.svg"></button></li>
+        </ul>
+      </article>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
