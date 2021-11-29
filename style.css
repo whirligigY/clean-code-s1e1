@@ -20,8 +20,10 @@
 }
 
 @media (max-width:768px) {
+
   .block-image_size { text-align: center;
-}
+  }
+
 }
 .block-tasks_centered {
   display: block;
