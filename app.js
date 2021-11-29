@@ -30,17 +30,17 @@ var createNewTaskElement = function (taskString) {
   var deleteButtonImg = document.createElement("img"); //delete button image
 
   label.innerText = taskString;
-  label.className = "task";
 
   //Each elements, needs appending
   checkBox.type = "checkbox";
   checkBox.classList.add("block-tasks__item-checkbox");
   label.classList.add("block-tasks__label");
   label.classList.add("block-tasks__item-label");
+  label.classList.add("block-tasks__item-label_task")
   editInput.type = "text";
   editInput.classList.add("block-tasks__item-text");
   editInput.classList.add("input-text");
-  editInput.classList.add("task");
+  editInput.classList.add("input-text_task");
 
   editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
   editButton.classList.add("button");
@@ -121,7 +121,6 @@ var taskCompleted = function () {
   console.log("Complete Task...");
 
   //Append the task list item to the #completed-tasks
-  console.log(this)
   var listItem = this.parentNode;
   if(!listItem.querySelector(".block-tasks__label").classList.contains('completed-tasks__label')) {
     listItem.querySelector(".block-tasks__label").classList.add('completed-tasks__label')
